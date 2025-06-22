@@ -17,6 +17,7 @@ clear
 
 ### Incorrect files
 ``` bash
+clear
 java simulation.Simulator incorrect_scenarios/iterations.txt && cat -e simulation.txt
 java simulation.Simulator incorrect_scenarios/type.txt && cat -e simulation.txt
 java simulation.Simulator incorrect_scenarios/type2.txt && cat -e simulation.txt
