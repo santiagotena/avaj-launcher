@@ -35,7 +35,7 @@ public class Simulator {
             if (line != null) {
                 try {
                     simulationRuns = Integer.parseInt(line.trim());
-                    if (simulationRuns < 0) {
+                    if (simulationRuns < 1) {
                         throw new IllegalArgumentException("Simulation runs must be a positive number.");
                     }
                 } catch (NumberFormatException e) {
@@ -60,7 +60,7 @@ public class Simulator {
                         int latitude = Integer.parseInt(parts[3]);
                         int height = Integer.parseInt(parts[4]);
 
-                        if (longitude < 0 || latitude < 0 || height < 0) {
+                        if (longitude < 1 || latitude < 1 || height < 1) {
                             throw new IllegalArgumentException("Coordinates (longitude, latitude, height) must be positive numbers.");
                         }
 
